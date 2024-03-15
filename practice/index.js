@@ -378,8 +378,31 @@
 
 // console.log('other application work');
 
-function login(){
-    console.log('logged in completed');
-}
+// function login(uname, password){
+//     console.log('logged in completed');
+//     console.log(uname, password);
+// }
 
-login()
+// login("Swapy", "Swpywpass")
+// login("Sahil", "sahilspass")
+// console.log('aashay', 'aashayspass');
+
+
+// function uppercase(string){
+//     const str = string.toUpperCase();
+//     return str;
+// }
+
+// console.log();
+
+
+// named export
+
+// import { userDetails } from "./one.js";
+
+// userDetails()
+
+// default exports
+// import logout from "./one.js";
+
+// logout()
