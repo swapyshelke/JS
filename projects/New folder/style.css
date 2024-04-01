@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    height: 400px;
+    width: 400px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.minute {
+    border: 2px solid black;
+    height: 250px;
+    width: 2px;
+    position: absolute;
+    transform: rotate(90deg);
+transform-origin: 100%;
+top: 50%;
+}
+
+

@@ -479,7 +479,6 @@
 
 // console.log(newarr);
 
-
 // const nameone = 'Python';
 // const nametwo = 'Jargon';
 
@@ -488,31 +487,414 @@
 
 // for(let i = 0 ; i < 100 ; i++) {
 // let randomnum = Math.floor(Math.random() * 256)
-// // randomnum = randomnum >= 255 ? randomnum : randomnum + 50; 
+// // randomnum = randomnum >= 255 ? randomnum : randomnum + 50;
 // console.log(randomnum);
 // }
-
 
 // const name = 'JavaScript'
 
 // // console.log(num);
 
 // for(let i = 0 ; i < 10 ; i++) {
-//     const num  = Math.round(Math.random()  * name.length ) 
+//     const num  = Math.round(Math.random()  * name.length )
 //     console.log(name[num]);
 // }
 
-
 // console.log("1 1 1 1 1 \n 2 1 2 4 8 3 \n 1 3 9 27 4 1 \n 4 16 64 5 1 \n 5 25 125");
 
-const sentence = 'You cannot end a sentence with because because because is a conjunction';
-const phrase = 'because because because';
+// const sentence = 'You cannot end a sentence with because because because is a conjunction';
+// const phrase = 'because because because';
 
-const indexone = sentence.indexOf(phrase)
-console.log(indexone);
-const indextwo = indexone + phrase.length
-console.log(indextwo);
+// const indexone = sentence.indexOf(phrase)
+// console.log(indexone);
+// const indextwo = indexone + phrase.length
+// console.log(indextwo);
 
-const ans = sentence.substring(0, indexone) + sentence.substring(indextwo) 
+// const ans = sentence.substring(0, indexone) + sentence.substring(indextwo)
 
-console.log(ans);
+// console.log(ans);
+
+// Calculate the total annual income of the person by extracting the numbers from the following text. 
+// 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+// const str = "Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'"
+
+// const strarr = str.split(" ");
+
+// console.log(strarr);
+
+// const now = new Date()
+
+// console.log(now.getFullYear());
+
+// const parsint = 
+
+// import { countries } from "./countries.js";
+// import { tech } from "./webtech.js";
+
+// console.log(countries, tech);
+
+
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+// const splitted = text.split(" ")
+
+// for(let word of splitted) {
+//     if(word.includes(",") || word.includes(".")) {
+//         word.pop();
+//     }
+// }
+
+// console.log(splitted);
+
+
+
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+// const splitted = text.split(" ")
+
+// for(let i = 0; i < splitted.length; i++) {
+//     let word = splitted[i];
+//     if(word.includes(",") || word.includes(".")) {
+//         splitted[i] = word.slice(0, -1);
+//     }
+// }
+
+// console.log(splitted);
+
+
+// Sort the array and find the min and max age
+// Find the median age(one middle item or two middle items divided by two)
+// Find the average age(all items divided by number of items)
+// Find the range of the ages(max minus min)
+// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+// Find the middle country(ies) in the countries array
+// Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+
+
+
+// median: 
+                            
+// check array size = 4   [1, 2, 3, 4]
+// even - 2 - element1= (4 / 2 )- 1, element2= (length/2)
+
+// element1= n/2, elment2= n/2-1
+// add them  = ele1 + ele2 / 2
+
+// odd - one - n 
+// middle number / element1 = n/2
+
+// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+// let median = 0
+// ages.sort()
+// console.log(ages);
+// const len = ages.length
+// if(len % 2 === 0) {
+//    let ele1;
+//    let ele2;
+
+//    ele1 = (len / 2) - 1;
+//    ele2 = (len / 2);
+   
+   
+//    console.log(ele1, ele2);
+//    let val1 = ages[ele1]
+//    let val2 = ages[ele2]
+//    console.log(val1, val2);
+
+//    median = (val1 + val2)/2
+//    console.log(median);
+
+// } else {
+//     let indexforodd = len/2;
+//     let elementval = ages[indexforodd]
+//     // console.log(elementval);
+
+//     median = elementval;
+//     console.log(median);
+// }
+
+// Find the average age(all items divided by number of items)
+
+// add all numbers
+// divide by length
+
+// for(num of ages){
+//     num += num
+// }
+
+// Develop a small script which generate any number of characters random id:   fe3jo1gl124g
+
+// const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 1, 2, 4, 5, 6, 7, 8, 9];
+
+// for(const char of chars) {
+//     let randomNum = Math.floor( Math.random() * chars.length)
+//     // console.log(chars[randomNum]);
+
+//     const randomChars = chars[randomNum]
+//     console.log(randomChars.toString());
+// }
+
+
+// const arr= 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// for(let i=0; i<10; i++){
+//     let randomScript= "";
+//     const randNum= Math.floor(Math.random()*26);
+//     for(let j=0; j<randNum; j++){
+//         randomScript+= arr[Math.floor(Math.random()*arr.length+1)];
+//     }
+//     console.log(randomScript);
+// }
+
+
+// Write a script which generates a random hexadecimal number.
+
+// const arr= 'ABCDEF0123456789';
+// for(let i=0; i<10; i++){
+//     let randomScript= "";
+//     const randNum= Math.floor(Math.random()*16);
+//     for(let j=0; j<randNum; j++){
+//         randomScript+= arr[Math.floor(Math.random()*arr.length+1)];
+//     }
+//     console.log(randomScript);
+// }
+
+
+// Write a script which generates a random rgb color number.
+
+
+// 255
+
+// for(let i=0; i<10; i++){
+//     const R= Math.floor(Math.random()*256);
+//     const G= Math.floor(Math.random()*256);
+//     const B= Math.floor(Math.random()*256);
+//     const rgb= `rgb(${R}, ${G}, ${B})`
+//     console.log(rgb);
+// }
+
+// Using the above countries array, create the following new array.
+
+
+
+// const countries = [
+//   'Albania',
+//   'Bolivia',
+//   'Canada',
+//   'Denmark',
+//   'Ethiopia',
+//   'Finland',
+//   'Germany',
+//   'Hungary',
+//   'Ireland',
+//   'Japan',
+//   'Kenya'
+// ]
+
+// ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+
+
+// 
+
+// Using the above countries array, create an array for countries length'.
+
+
+
+// const countries = [
+//   'Albania',
+//   'Bolivia',
+//   'Canada',
+//   'Denmark',
+//   'Ethiopia',
+//   'Finland',
+//   'Germany',
+//   'Hungary',
+//   'Ireland',
+//   'Japan',
+//   'Kenya'
+// ]
+
+
+// const lenArr= Array(countries.length);
+// for(let i=0; i<countries.length; i++) lenArr[i]= countries[i].length;
+// console.log(lenArr);
+
+
+
+// Use the countries array to create the following array of arrays:
+
+// const arr= [];
+// for(let country of countries){
+//     const tempArr= [];
+//     const first= country;
+//     const second= country.substring(0, 3).toUpperCase();
+//     const third= country.length;
+//     tempArr.push(first);
+//     tempArr.push(second);
+//     tempArr.push(third);
+
+//     arr.push(tempArr);
+// }
+// console.log(arr);
+
+
+
+// [
+//     ['Albania', 'ALB', 7],
+//     ['Bolivia', 'BOL', 7],
+//     ['Canada', 'CAN', 6],
+//     ['Denmark', 'DEN', 7],
+//     ['Ethiopia', 'ETH', 8],
+//     ['Finland', 'FIN', 7],
+//     ['Germany', 'GER', 7],
+//     ['Hungary', 'HUN', 7],
+//     ['Ireland', 'IRE', 7],
+//     ['Iceland', 'ICE', 7],
+//     ['Japan', 'JAP', 5],
+//     ['Kenya', 'KEN', 5]
+//   ]
+
+// 
+
+// function sumAllNums(){
+//     console.log(arguments);
+// }
+
+
+
+// sumAllNums(1, 2, 3, 4, 5)
+
+// const sum = (...array) => {
+//     console.log(array);
+// }
+
+// sum(1, 2, 3, 4, 5)
+
+// function declaraton: 
+
+
+// (function(name) {
+//     console.log('Hello, ' + name + '!');
+//   })('Alice');
+
+
+// const changeToUpperCase = (arr) => {
+//     const newArr = []
+//     for (const element of arr) {
+//       newArr.push(element.toUpperCase())
+//     }
+
+//     return newArr
+//   }
+  
+//   const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+//   console.log(changeToUpperCase(countries))
+
+
+
+// const printFullName = (firstName, lastName) =>    `${firstName} ${lastName}`
+
+
+//   console.log(printFullName('Asabeneh', 'Yetayeh'))
+
+// function greetings(name = 'swapnil', age = 20) {
+//     let message = `${name}, welcome to 30 Days Of JavaScript! youre age is ${age}`
+//     return message 
+//   }
+  
+//   console.log(greetings())
+//   console.log(greetings('ritesh', 100))
+
+
+// function solveLinEquation(a, b, c, x) {
+//     return (-c - a * x) / b;
+//   }
+
+//   console.log(solveLinEquation(1, 2, 3,4 ));
+
+
+// function userIdGeneratedByUser() {
+//     const numCharsInput = prompt("Enter the number of characters:");
+//     const numIdsInput = prompt("Enter the number of IDs to generate:");
+  
+//     const numChars = parseInt(numCharsInput);
+//     const numIds = parseInt(numIdsInput);
+  
+//     if (isNaN(numChars) || isNaN(numIds) || numChars <= 0 || numIds <= 0) {
+//       return "Please enter valid positive numbers.";
+//     }
+  
+//     let result = "";
+//     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+//     for (let i = 0; i < numIds; i++) {
+//       let userId = "";
+//       for (let j = 0; j < numChars; j++) {
+//         userId += characters.charAt(Math.floor(Math.random() * characters.length));
+//       }
+//       result += userId + "\n";
+//     }
+  
+//     return result;
+//   }
+  
+
+//  console.log( userIdGeneratedByUser());
+
+// Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+
+// const hexaString= '0123456789abcdef';
+// const hexColor= () => {
+//   const randNum= Math.floor(Math.random()*7);
+//   let color= '#';
+//   for(let i=0; i<randNum; i++){
+//     const temp= Math.floor(Math.random()*16);
+//     color+= hexaString[temp];
+//   }
+//   return color;
+// }
+
+// for(let i = 0; i < 10; i++){
+//     console.log(hexColor());
+// }
+
+// function arrayOfHexaColors(numColors) {
+//     const colors = [];
+//     const characters = "0123456789ABCDEF";
+  
+//     for (let i = 0; i < numColors; i++) {
+//       let color = "#";
+//       for (let j = 0; j < 6; j++) {
+//         color += characters.charAt(Math.floor(Math.random() * 16));
+//       }
+//       colors.push(color);
+//     }
+  
+//     return colors;
+//   }
+  
+//   // Example usage
+//   console.log(arrayOfHexaColors(5)); // Returns an array of 5 random hexadecimal colors
+  
+
+function hexToRgb(hex) {
+    // Remove the leading # if it's there
+    hex = hex.replace(/^#/, '');
+  
+    // Parse the hexadecimal string into separate red, green, and blue values
+    let r = parseInt(hex.substring(0, 2), 16);
+    let g = parseInt(hex.substring(2, 4), 16);
+    let b = parseInt(hex.substring(4, 6), 16);
+  
+    return { r, g, b };
+  }
+  
+  // Example usage
+
+
+  
+
+  for(let i = 0; i < 10; i++){
+    let string = `#FFA50${i}`
+    console.log(hexToRgb(string)); 
+}
