@@ -1087,14 +1087,13 @@
 
 // console.log(cube(callback, 5));
 
-
 // const numbers = [1, 2, 3, 4, 5]
 // const sumArray = arr => {
 //   let sum = 0
 //   arr.forEach(function(element) {
 //     sum += element
 //     return sum
-//   }) 
+//   })
 // }
 
 // console.log(sumArray(numbers));
@@ -1128,7 +1127,6 @@
 
 // console.log(countries);
 
-
 // const countries = [
 //   'Albania',
 //   'Bolivia',
@@ -1147,3 +1145,283 @@
 //     return element.toUpperCase()
 // })
 // console.log(square);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce((x, currentValue) => {
+//    for(let i = 0 ; i < 10 ; i++){
+//      console.log(x, currentValue);
+//    }
+//     x + currentValue, 0}
+//     console.log(x, currentValue)
+//     );
+// console.log(sum); // Output: 15
+
+// const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+// console.log(products.sort())
+
+// const objArr = [
+//     { name: 'Asabeneh', score: 95 },
+//      { name: 'Lidiya', score: 98 },
+//     { name: 'Mathias', score: 80 },
+//     { name: 'Elias', score: 50 },
+//     { name: 'Martha', score: 85 },
+//     { name: 'John', score: 100 },
+//   ]
+
+// objArr.sort(function (a, b) {
+//     if (a.key < b.key) return -1
+//     if (a.key > b.key) return 1
+//     return 0
+//   })
+
+//   // or
+
+//   objArr.sort(function (a, b) {
+//     if (a['key'] < b['key']) return -1
+//     if (a['key'] > b['key']) return 1
+//     return 0
+//   })
+
+//   const users = [
+//     { name: 'Asabeneh', age: 150 },
+//     { name: 'Brook', age: 50 },
+//     { name: 'Eyob', age: 100 },
+//     { name: 'Elias', age: 22 },
+//   ]
+//   users.sort((a, b) => {
+//     if (a.age < b.age) return -1
+//     if (a.age > b.age) return 1
+//     return 0
+//   })
+//   console.log(users)
+
+// const numbers = [
+//     {
+//         name: "Swapnil",
+//         score: 99
+//     },
+
+//     {
+//         name: "Ritesh",
+//         score: 88
+//     },
+//     {
+//         name: "Sahil",
+//         score: 77
+//     },
+
+// ]
+
+// function above90(num) {
+//     return  score ? acore > 90
+// }
+
+// console.log(numbers.map(above90));
+
+// const scores = [85, 92, 78, 98, 88, 91];
+
+// function above90(score){
+//     return score > 90
+// }
+
+// const highScore = scores.filter(above90)
+
+// console.log(highScore);
+
+// const highScores = scores.reduce((acc, curr) => {
+//     if(curr > 90) {
+//         acc.push(curr);
+//     }
+
+//     return acc
+// }, []);
+
+// console.log(highScores);
+
+// scores.forEach((ele) => {
+//     console.log(ele);
+// })
+
+// Use map to create a new array by changing each country to uppercase in the countries array.
+// const countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Côte d'Ivoire", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini" ];
+
+// const newCountries = countries.map((elements) => {
+//        return elements.length
+// })
+
+// console.log(newCountries);
+
+// const scores = [85, 92, 78, 98, 88, 91];
+
+// const countries = ["Afghanistanland", "landAlbania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Côte d'Ivoire", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini" ];
+
+// const newArray = countries.filter((ele) => {
+//     return ele.startsWith("A")
+// })
+
+// console.log(newArray);
+
+// const prices = [10, 20, null, 30, undefined, 40, NaN, 50, 'abc'];
+
+// // Filter out only prices with values
+// const validPrices = prices.filter(price => typeof price === 'number' && !isNaN(price));
+
+// console.log(validPrices);
+//  // Output: [10, 20, 30, 40, 50]
+
+// getStrindLists
+// array
+
+// Use reduce to sum all the numbers in the numbers array.
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const sum = numbers.reduce((accumulator, currentValue, currentIndex, array) => {
+//   console.log(`accumulator: ${accumulator}, currentValue: ${currentValue}, currentIndex: ${currentIndex}`);
+//   return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum);
+
+// Use some to check if some names' length greater than seven in names array
+
+// const names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank"];
+
+// const arr = names.some(name => name.length  > 6)
+
+// const countries = ["Afghanistanland", "landAlbania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Côte d'Ivoire", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini" ];
+
+// const arr = countries.every((ele) => {
+//     return ele.includes('land')
+// })
+
+// console.log(arr);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const index = numbers.findIndex(num => num > 3);
+// console.log(index);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const foundNumber = numbers.find(num => num > 3);
+// console.log(foundNumber);
+// // Output: 4 (the first number greater than 3)
+
+// Use findIndex to find the position of the first country
+// containing only six letters in the countries array
+
+//  const countries = ["Afghanistanland", "Norway", "landAlbania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Côte d'Ivoire", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini" ];
+
+// //  const firstCountry = countries.findIndex((element) => {
+// //     return element.length > 6
+// //  })
+
+// //  console.log(firstCountry);
+
+// const index = countries.findIndex((element) => {
+//     return element === "Norway"
+// })
+
+// console.log(index);
+
+// Find the total price of products by chaining two or more array iterators(eg.
+// arr.map(callback).filter(callback).reduce(callback))
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Use map to transform each element into its value
+// const values = numbers.map(num => num);
+// console.log(values);
+
+// // Use reduce to calculate the total
+// const total = values.reduce((acc, curr) => acc + curr);
+
+// console.log(total);
+
+// const products = [
+//     { name: "Product 1", price: 10 },
+//     { name: "Product 2", price: 20 },
+//     { name: "Product 3", price: null },
+//     { name: "Product 4", price: 30 },
+//     { name: "Product 5", price: undefined },
+//     { name: "Product 6", price: 40 },
+//     { name: "Product 7", price: "abc" }
+//   ];
+
+//   const totalPrice = products
+//     .map(product => product.price) // Extract prices
+//     .filter(price => typeof price === 'number' && !isNaN(price)) // Remove invalid prices
+//     .reduce((acc, curr) => acc + curr, 0); // Calculate total
+
+//   console.log(totalPrice);
+
+// Output: 100 (10 + 20 + 30 + 40)
+//   console.log(isNaN('kgjujuner')); // true
+//   console.log(isNaN('100')); // false
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// // 1 3 5 7 9
+// // filter odd numbers
+// // add them
+
+// const res = numbers.filter((element) => {
+//     return element % 2;
+// }).reduce((ele, curr) => {
+//     return ele + curr;
+// })
+
+// console.log(res);
+
+// const users = [
+//     { fname: "John", lname: "Doe", age: 30 },
+//     { fname: "Jane", lname: "Smith", age: 25 },
+//     { fname: "Alice", lname: "Johnson", age: 35 },
+//     { fname: "Bob", lname: "Brown", age: 40 }
+//   ];
+
+//   // fname lname
+
+//   const names = users.filter((element) => {
+//     console.log(element.fname + " " +  element.lname);
+//   })
+
+// Find the total price of products by chaining two or more array iterators(eg.
+// arr.map(callback).filter(callback).reduce(callback))
+
+// const products = [
+//   { name: "Product 1", price: 10 },
+//   { name: "Product 2", price: 20 },
+//   { name: "Product 3", price: null },
+//   { name: "Product 4", price: 30 },
+//   { name: "Product 5", price: undefined },
+//   { name: "Product 6", price: 40 },
+//   { name: "Product 7", price: "abc" },
+// ];
+
+// const total = products.map((product) => {
+//   return product.price;
+// }).filter((el) => {
+//   return typeof el === 'number'
+// }).reduce((acc, curr) => {
+//   return acc + curr
+// })
+
+// console.log(total);
+
+
+// Find the sum of price of products using only reduce reduce(callback))
+
+// const products = [
+//   { name: "Product 1", price: 10 },
+//   { name: "Product 2", price: 20 },
+//   { name: "Product 3", price: null },
+//   { name: "Product 4", price: 30 },
+//   { name: "Product 5", price: undefined },
+//   { name: "Product 6", price: 40 },
+//   { name: "Product 7", price: "abc" },
+// ];
+
+// const totalPrice = products.reduce((acc, curr) => {
+//   return acc + curr
+// })
+
+console.log(totalPrice);
