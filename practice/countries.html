@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<body lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 30%;
-            height: 100vh;
-            background-color: rebeccapurple;
-        }
-        .number {
-            width: 50px;
-            height: 50px;
-            border: 1px solid black;
-            margin: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-
-
-
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
+    .container {
+        display: grid;
+        width: 60%;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        gap: 10px;
+        margin: auto;
+    }
 
+    .country{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        padding: 40px 30px;
+        border-radius: 10px;
+    }
+</style>
 <body>
-    <div class="container" id="cotriesContainer"></div>
+    <div class="container">
 
-    <script>
-
-
-
-const countries = [
+    </div>
+    
+</body>
+<script>
+    const countries = [
     "Afghanistan",
     "Albania",
     "Algeria",
@@ -65,7 +65,6 @@ const countries = [
     "Bulgaria",
     "Burkina Faso",
     "Burundi",
-    "Côte d'Ivoire",
     "Cabo Verde",
     "Cambodia",
     "Cameroon",
@@ -76,17 +75,17 @@ const countries = [
     "China",
     "Colombia",
     "Comoros",
-    "Congo (Congo-Brazzaville)",
+    "Congo",
     "Costa Rica",
     "Croatia",
     "Cuba",
     "Cyprus",
-    "Czechia (Czech Republic)",
-    "Democratic Republic of the Congo",
+    "Czechia",
     "Denmark",
     "Djibouti",
     "Dominica",
     "Dominican Republic",
+    "East Timor",
     "Ecuador",
     "Egypt",
     "El Salvador",
@@ -110,7 +109,6 @@ const countries = [
     "Guinea-Bissau",
     "Guyana",
     "Haiti",
-    "Holy See",
     "Honduras",
     "Hungary",
     "Iceland",
@@ -127,6 +125,9 @@ const countries = [
     "Kazakhstan",
     "Kenya",
     "Kiribati",
+    "Korea, North",
+    "Korea, South",
+    "Kosovo",
     "Kuwait",
     "Kyrgyzstan",
     "Laos",
@@ -155,7 +156,7 @@ const countries = [
     "Montenegro",
     "Morocco",
     "Mozambique",
-    "Myanmar (formerly Burma)",
+    "Myanmar",
     "Namibia",
     "Nauru",
     "Nepal",
@@ -164,13 +165,12 @@ const countries = [
     "Nicaragua",
     "Niger",
     "Nigeria",
-    "North Korea",
     "North Macedonia",
     "Norway",
     "Oman",
     "Pakistan",
     "Palau",
-    "Palestine State",
+    "Palestine",
     "Panama",
     "Papua New Guinea",
     "Paraguay",
@@ -199,7 +199,6 @@ const countries = [
     "Solomon Islands",
     "Somalia",
     "South Africa",
-    "South Korea",
     "South Sudan",
     "Spain",
     "Sri Lanka",
@@ -208,10 +207,10 @@ const countries = [
     "Sweden",
     "Switzerland",
     "Syria",
+    "Taiwan",
     "Tajikistan",
     "Tanzania",
     "Thailand",
-    "Timor-Leste",
     "Togo",
     "Tonga",
     "Trinidad and Tobago",
@@ -223,10 +222,11 @@ const countries = [
     "Ukraine",
     "United Arab Emirates",
     "United Kingdom",
-    "United States of America",
+    "United States",
     "Uruguay",
     "Uzbekistan",
     "Vanuatu",
+    "Vatican City",
     "Venezuela",
     "Vietnam",
     "Yemen",
@@ -234,78 +234,25 @@ const countries = [
     "Zimbabwe"
 ];
 
-const container = document.getElementsByClassName('.container')
+const container= document.querySelector('.container');
 
+countries.forEach((country) =>{
+    const c= document.createElement('country')
+    c.textContent= country;
+    c.className= 'country';
+    container.appendChild(c);
+});
 
+// 2nd sol 
 
-countries.forEach((country, index) => {
-  
-})
+// countries.forEach((country) =>{
+//     const c= document.createElement('div')
+//     c.textContent= country;
+//     c.classList = 'country';
+//     container.appendChild(c);
+// });
 
+// console.log(countries);
 
-
-
-
-
-        // const container = document.getElementById('numberContainer');
-
-        // for (let i = 0; i <= 100; i++) {
-        //     const numberDiv = document.createElement('div');
-        //     numberDiv.className = 'number';
-        //     numberDiv.textContent = i;
-        //     container.appendChild(numberDiv);
-
-            
-
-        //     if(i % 2 === 0 ){
-        //         numberDiv.style.backgroundColor = 'green'
-        //     } else if(i % 2 === 1) {
-        //         numberDiv.style.backgroundColor = 'yellow'
-        //     } else if(){
-        //         numberDiv.style.backgroundColor = 'red'
-        //     }
-        // }
-
-        // ============= rites code
-
-    //     const isPrime = (ele) =>{
-    //     if(ele==0 || ele==1) return 0;
-    //     for(let i=2; i<=Math.sqrt(ele); i++){
-    //         if(ele % i ==0) return 0;
-    //     }
-    //     return 1;
-    // } 
-
-    // for(let i=0; i<=100; i++){
-    //     const box= document.createElement('h1')
-    //     box.classList= 'box';
-    //     box.textContent= i;
-    //     if(isPrime(i)) box.style.backgroundColor= 'red'
-    //     else if(i%2==0){
-    //         box.style.backgroundColor= 'green'
-    //     }
-    //     else{
-    //         box.style.backgroundColor= 'yellow'
-    //     }
-    //     document.querySelector('.container').appendChild(box);
-    // }
-
-
-    </script>
-</body>
-
-<script>
-
-// Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div.
-
-//     const divElParent = document.createElement('div')
-//     const divElChild = document.createElement('div')
-
-//    const table = document.createElement('table')
-
-
-
-    </script>   
-
-
+</script>
 </html>

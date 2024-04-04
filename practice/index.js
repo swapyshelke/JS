@@ -1407,7 +1407,6 @@
 
 // console.log(total);
 
-
 // Find the sum of price of products using only reduce reduce(callback))
 
 // const products = [
@@ -1420,8 +1419,1016 @@
 //   { name: "Product 7", price: "abc" },
 // ];
 
-// const totalPrice = products.reduce((acc, curr) => {
-//   return acc + curr
+// const prices = products.reduce((acc, curr) => {
+//   return curr
+//  })
+
+// console.log(prices);
+
+// const languages = [
+//   'English',
+//   'Finnish',
+//   'English',
+//   'French',
+//   'Spanish',
+//   'English',
+//   'French',
+// ]
+
+// const setOfLanguages = new Set(languages)
+
+// console.log(setOfLanguages.has("English"));
+
+// console.log(setOfLanguages);
+
+// console.log("after addition");
+
+// setOfLanguages.add("Marathi")
+
+// console.log(setOfLanguages);
+
+// console.log(setOfLanguages);
+
+// console.log("languages", languages);
+
+// console.log(setOfLanguages.delete('Marathi'));
+
+// console.log(setOfLanguages);
+
+// const languages = [
+//   'English',
+//   'Finnish',
+//   'English',
+//   'French',
+//   'Spanish',
+//   'English',
+//   'French',
+// ]
+// const langSet = new Set(languages)
+// console.log(langSet) // Set(4) {"English", "Finnish", "French", "Spanish"}
+// console.log(langSet.size) // 4
+
+// const counts = []
+// const count = {}
+
+// for (const l of langSet) {
+//   const filteredLang = languages.filter((lng) => lng === l)
+//   console.log(filteredLang) // ["English", "English", "English"]
+//   counts.push({ lang: l, count: filteredLang.length })
+// }
+// console.log(counts)
+
+// let a = [1, 2, 3, 4, 5]
+// let b = [3, 4, 5, 6]
+// let c = [...a, ...b]
+
+// let A = new Set(a)
+// let B = new Set(b)
+// let C = new Set(c)
+
+// console.log(C)
+
+// const countries = [
+//   ['Finland', 'Helsinki'],
+//   ['Sweden', 'Stockholm'],
+//   ['Norway', 'Oslo'],
+//   ['dwev', "swa"]
+// ]
+// const map = new Map(countries)
+
+// map.set('delhi', 'india')
+
+// console.log(map)
+// console.log(map.size)
+
+// Create a set containing 0 to 10 using loop
+
+// const myset = new Set()
+
+// for (let i = 0; i < 10; i++) {
+//   myset.add(i)
+// }
+// console.log(myset);
+
+// Remove an element from a set
+
+// myset.delete(1)
+
+// console.log(myset);
+
+// Clear a set
+
+// myset.clear();
+
+// console.log(myset);
+
+/// Create a set of 5 string elements from array
+
+// define array
+// push values to array
+// push values to set
+
+// Find a union b
+
+// const seta = new Set([1, 2, 3, 4, 5])
+// const setb = new Set([2, 3, 4, 5, 6, 7])
+
+// console.log(seta);
+// console.log(setb);
+
+// // const union = seta.filter((ele) => ele == setb.has(ele))
+// // console.log(union);
+
+// const union = [...seta, ...setb]
+
+// const unionSet = new Set(union)
+
+// console.log(unionSet);
+
+// const set1= new Set([1, 2, 3, 4, 5]);
+// const set2= new Set([2, 3, 4, 5, 6]);
+
+// Find a intersection b
+
+// const set1= new Set([1, 2, 3, 4, 5]);
+//     const set2= new Set([2, 3, 4, 5, 6]);
+//     const set3= new Set([...set1, ...set2]);
+//     const set4= new Set();
+
+//     for(const ele of set1){
+//         if(set2.has(ele)){
+//             set4.add(ele);
+//         }
+//     }
+
+//     console.log(set3);
+//     console.log(set4);
+
+// const countries = {
+//   "Country1": {
+//     languages: ["Language1", "Language2"]
+//     // other country information
+//   },
+//   "Country2": {
+//     languages: ["Language3", "Language4", "Language5"]
+//     // other country information
+//   },
+//   // other countries
+// };
+
+// const rectangle = {
+//   width: 20,
+//   height: 10,
+//   area: 200
+// }
+// let { width: w, height: h, area: a, perimeter: p } = rectangle
+
+// console.log(w, h, a, p)
+
+// console.log(rectangle.width)
+
+// w = 25
+
+// console.log("after changing value", w);
+// console.log("after changing value", rectangle.width);
+
+// const rect = {
+//   width: 20,
+//   height: 10
+// }
+
+// const calculatePerimeter = rectangle => {
+//   return 2 * (rectangle.width + rectangle.height)
+// }
+
+// console.log(calculatePerimeter(rect))
+
+// const person = {
+//   firstName: 'Asabeneh',
+//   lastName: 'Yetayeh',
+//   age: 250,
+//   country: 'Finland',
+//   job: 'Instructor and Developer',
+//   skills: [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB',
+//     'Python',
+//     'D3.js'
+//   ],
+//   languages: ['Amharic', 'English', 'Suomi(Finnish)']
+// }
+
+// const getPersonInfo = obj => {
+//   const skills = obj.skills
+//   const formattedSkills = skills.slice(0, -1).join(', ')
+//   const languages = obj.languages
+//   const formattedLanguages = languages.slice(0, -1).join(', ')
+//   return formattedLanguages
+// }
+
+// console.log(getPersonInfo(person));
+
+// const todoList = [
+//   {
+//     task:'Prepare JS Test',
+//     time:'4/1/2020 8:30',
+//     completed:true
+//   },
+//   {
+//     task:'Give JS Test',
+//     time:'4/1/2020 10:00',
+//     completed:false
+//   },
+//   {
+//     task:'Assess Test Result',
+//     time:'4/1/2020 1:00',
+//     completed:false
+//   }
+//   ]
+
+//   for (const {task, time, completed} of todoList) {
+//     console.log(task, time, completed);
+//   }
+
+// const countries = [
+//   'Germany',
+//   'France',
+//   'Belgium',
+//   'Finland',
+//   'Sweden',
+//   'Norway',
+//   'Denmark',
+//   'Iceland'
+// ]
+
+// const [a, b, ...remaining] = countries
+
+// console.log(a, b, remaining);
+
+// Destructure the rectangle object by
+// its properties or keys.
+
+// const rectangle = {
+//   width: 20,
+//   height: 10,
+//   area: 200,
+//   perimeter: 60
+// }
+
+// const  {width, height, area} = rectangle
+// console.log(width);
+
+// Iterate through the users array and get all
+// the keys of the object using destructuring
+
+// const users = [
+//   {
+//     name:'Brook',
+//     scores:75,
+//     skills:['HTM', 'CSS', 'JS'],
+//     age:16
+//   },
+//   {
+//     name:'Alex',
+//     scores:80,
+//     skills:['HTM', 'CSS', 'JS'],
+//     age:18
+//   },
+//   {
+//     name:'David',
+//     scores:75,
+//     skills:['HTM', 'CSS'],
+//     age:22
+//   },
+//   {
+//     name:'John',
+//     scores:85,
+//     skills:['HTML'],
+//     age:25
+//   },
+//   {
+//     name:'Sara',
+//     scores:95,
+//     skills:['HTM', 'CSS', 'JS'],
+//     age: 26
+//   },
+//   {
+//     name:'Martha',
+//     scores:80,
+//     skills:['HTM', 'CSS', 'JS'],
+//     age:18
+//   },
+//   {
+//     name:'Thomas',
+//     scores:90,
+//     skills:['HTM', 'CSS', 'JS'],
+//     age:20
+//   }
+//   ]
+
+//  users.forEach(user => {
+//   const {name, scores, skills} = user;
+//   const values = Object.values(user)
+//   console.log(skills);
+
+//   const filtered = users.filter((user) => {
+//     return  user.skills.length < 2
+//   } )
+
+//   console.log(filtered);
+//  });
+
+// //  const person= [
+// //   {name: "Ritesh", age: 25, isMArried: false},
+// //   {name: "Akash", age: 25, isMArried: false},
+// //   {name: "Yogesh", age: 25, isMArried: false},
+// //   {name: "Sharad", age: 25, isMArried: false}
+// // ]
+
+// // for(const {name, age, isMArried} of person){
+// //   console.log(name, age, isMArried);
+// // }
+
+// Destructure the countries object print name,
+// capital, population and languages of all countries
+
+// const countries = {
+//   "USA": {
+//     name: "United States of America",
+//     population: 331449281,
+//     language: "English",
+//     capital: "Washington D.C."
+//   },
+//   "IND": {
+//     name: "India",
+//     population: 1393409038,
+//     language: "Hindi, English",
+//     capital: "New Delhi"
+//   },
+//   "CHN": {
+//     name: "China",
+//     population: 1444216107,
+//     language: "Mandarin",
+//     capital: "Beijing"
+//   },
+//   // Add more countries as needed
+// };
+
+// for(const cc in countries) {
+//   const {name, capital, population, language} = countries[cc]
+//   console.log(cc);
+// }
+
+// const convertArrayToObject = (arr) => {
+//   let obj = Object.assign({}, arr);
+
+//   const newObj = {...obj}
+//   console.log(newObj);
+// }
+
+// const students = [
+//   ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+//   ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+// ]
+
+// convertArrayToObject(students)
+
+// // console.log(JSON.stringify({ x: 5, y: 6 }));
+
+// // console.log(
+// //   JSON.stringify([new Number(3), new String('false'), new Boolean(false)]),
+// // );
+
+// let regExp = new RegExp('love', 'gi')
+// console.log(regExp);
+
+// let regExp  = /love/gi
+
+// console.log(typeof regExp);
+
+// const str = 'i Love JS'
+// const result = str.replace(/JS/gi, 'python')
+// console.log(result);
+
+// const names = ['Asabeneh', 'Brook', 'David', 'John']
+// console.table(names)
+// const countries = [
+//   ['Finland', 'Helsinki'],
+//   ['Sweden', 'Stockholm'],
+//   ['Norway', 'Oslo']
+// ]
+
+// console.time('Regular for loop')
+
+// for (let i = 0; i < countries.length; i++) {
+//   console.log(countries[i][0], countries[i][1])
+// }
+
+// console.timeEnd('Regular for loop')
+
+// console.time('for of loop')
+// for (const [name, city] of countries) {
+//   console.log(name, city)
+// }
+// console.timeEnd('for of loop')
+
+// console.time('forEach loop')
+// countries.forEach(([name, city]) => {
+//   console.log(name, city)
+// })
+// console.timeEnd('forEach loop')
+
+// for (let i = 0; i < countries.length; i++) {
+//   console.log(countries[i][0], countries[i][1])
+// }
+
+// console.info('30 Days Of JavaScript challenge is trending on Github')
+
+// console.assert(4 > 3, '4 is greater than 3') // no result
+// console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not greater than 4
+
+// try {
+//   let lastName = 'Yetayeh'
+//   let fistName = 'fglm'
+//   let fullName = fistName + ' ' + lastName
+//   console.log(fullName);
+// } catch (err) {
+//   console.log(err)
+// }
+
+// try {
+//   let lastName = 'Yetayeh';
+//   let fistName = 'fglm';
+//   if (!lastName || !fistName) {
+//     throw new Error('Missing first name or last name');
+//   }
+//   let fullName = fistName + ' ' + lastName;
+// } catch (err) {
+//   console.log(err)
+// }
+
+// try {
+//   let fname = "Swapnil"
+//   console.log(fname + lname);
+// } catch(err) {
+//   console.error(err);
+// } finally{
+//   console.log('fuck you always');
+// }
+
+// const throwErrorExampleFun = () => {
+//   let message
+//   let x = prompt('Enter a number: ')
+//   try {
+//     if (x == '') throw 'empty'
+//     if (isNaN(x)) throw 'not a number'
+//     x = Number(x)
+//     if (x < 5) throw 'too low'
+//     if (x > 10) throw 'too high'
+//   } catch (err) {
+//     console.log(err)
+//   }
+// }
+// throwErrorExampleFun()
+
+// class Person {
+
+//   constructor(fname, lname, age, contry, city) {
+
+//     this.fname = fname
+//     this.lastname = lname
+//     this.age = age
+//     this.country = contry
+//     this.city = city
+//     this.score = 10
+//   }
+
+//   set setName(fname) {
+//     this.fname = fname
+//   }
+
+//   get getName(){
+//     return this.fname
+//   }
+
+// };
+
+// const person1 = new Person(undefined, "Shelke", 22, "India", "Sambhaji Nagar");
+
+// // console.log(person1);
+
+// person1.setName("sachin")
+// console.log(person1.getName());
+
+// class Person {
+//   constructor(fname, lname, age, country, city) {
+//     this.fname = fname;
+//     this.lastname = lname;
+//     this.age = age;
+//     this.country = country;
+//     this.city = city;
+//     this.score = 10;
+//   }
+
+//   get getScore(){
+//     return this.score
+//   }
+
+//   set setScore(score) {
+//     this.score += score
+//   }
+
+//   set setName(name) {
+//     this.fname = name
+//   }
+
+//   get getName(){
+//     return this.fname
+//   }
+
+//   static showDateTime(){
+//     let now = new Date();
+//     return now
+//   }
+// }
+
+// const person1 = new Person(undefined, "Shelke", 22, "India", "Sambhaji Nagar");
+
+// // person1.setScore = 1
+// // person1.setName = "Sachin"
+// // person1.setName("Sachin");
+// // console.log(person1.getScore);
+// // console.log(person1.getName); // Output: Sachin
+
+// // console.log(Person.showDateTime());
+
+// class Students extends Person {
+//   print(){
+//     console.log('hello from students class');
+//     return 'done'
+//   }
+// }
+
+// const std1 = new Students("z", "b")
+
+// console.log(std1);
+// console.log(std1.print());
+
+// // class Person {
+
+// //   constructor(fname, lname, age, country, city) {
+
+// //     this.fname = fname
+// //     this.lastname = lname
+// //     this.age = age
+// //     this.country = country
+// //     this.city = city
+// //     this.score = 10
+// //   }
+
+// //    setLastname(ln){
+// //     this.lastname = ln
+// //   }
+
+// //   // set setName (name){
+// //   //   this.fname= name;
+// //   // }
+
+// //   get getName(){
+// //     return this.fname;
+// // }
+
+// // };
+
+// // const person1 = new Person("Ritesh", "Shelke", 22, "elkgm", "alfkg");
+// // console.log(person1);
+
+// // person1.setName = "Aakash"
+// // console.log(person1.getName);
+
+// // // person1.setLastname("PAtil")
+
+// // console.log(person1.getName);
+
+// // whenever we create am object we can initialize the value to the
+// // object only at time time using constructor,
+// // when it dont have getter setter we cant change its value
+
+// //
+
+// class Animal {
+
+//   constructor(name, age, color, legs) {
+//     this.name = name
+//     this.age = age
+//     this.color = color
+//     this.legs = legs
+//   }
+
+//   makeSound(){
+//     console.log('Animal sound');
+//   }
+// }
+
+// // inheritance
+
+// // const AnimalOne = new Animal('animalone', 100, "red", "4")
+// // console.log(AnimalOne);
+
+// // class Cat extends Animal {
+// //   makeSound(){
+// //     console.log('cat sound');
+// //   }
+// // }
+
+// // const catone = new Cat("cat one", 200, "white", "4")
+// // console.log(catone);
+// // console.log(catone.makeSound());
+
+// // class Dog extends Animal{
+// //   makeSound(){
+// //     console.log('dog sound');
+// //   }
+// // }
+
+// // const dogone = new Dog('dog one', 150, "yelloe", 5)
+// // console.log(dogone);
+
+// // riteh code
+
+// class Person {
+
+//   constructor(fname, lname, age, country, city) {
+
+//     this.fname = fname
+//     this.lastname = lname
+//     this.age = age
+//     this.country = country
+//     this.city = city
+//     this.score = 10
+//   }
+
+//   get getScore(){
+//     return this.score
+//   }
+
+//   get getName(){
+//       return this.fname;
+//   }
+
+//   set setName (name){
+//     this.fname= name;
+//   }
+// };
+
+// const person1 = new Person("Ritesh", "Shelke", 22, "elkgm", "alfkg");
+// console.log(person1);
+// person1.setName("Akash");
+// console.log(person1.getName());
+
+// const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+
+// class Statistics{
+//   constructor(ages){
+//     this.ages = ages;
+//   }
+
+//   mean(){
+//     return this.sum()  /  this.ages.length
+//   }
+
+//   sum(){
+//     return this.ages.reduce((acc, val) => acc + val, 0)
+//   }
+
+// }
+
+// const statsObj = new Statistics(ages);
+// console.log(statsObj.mean());
+
+// const user = {
+//   firstName: 'Asabeneh',
+//   lastName: 'Yetayeh',
+//   country: 'Finland',
+//   city: 'Helsinki',
+//   email: 'alex@alex.com',
+//   skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python'],
+//   age: 250,
+//   isLoggedIn: false,
+//   points: 30
+// }
+
+// const txt = JSON.stringify(user, ['firstName', 'lastName', 'country', 'city', 'age'], 10)
+// console.log(txt);
+
+// const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
+
+// //
+
+// const data = JSON.stringify(skills)
+// console.log(data);
+
+// Find the user who has many skills from the variable stored
+// in txt.
+
+// const txt = `{
+//   "Alex": {
+//       "email": "alex@alex.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript"
+//       ],
+//       "age": 20,
+//       "isLoggedIn": false,
+//       "points": 30
+//   },
+//   "Asab": {
+//       "email": "asab@asab.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "Redux",
+//           "MongoDB",
+//           "Express",
+//           "React",
+//           "Node"
+//       ],
+//       "age": 25,
+//       "isLoggedIn": false,
+//       "points": 50
+//   },
+//   "Brook": {
+//       "email": "daniel@daniel.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "React",
+//           "Redux"
+//       ],
+//       "age": 30,
+//       "isLoggedIn": true,
+//       "points": 50
+//   },
+//   "Daniel": {
+//       "email": "daniel@alex.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "Python"
+//       ],
+//       "age": 20,
+//       "isLoggedIn": false,
+//       "points": 40
+//   },
+//   "John": {
+//       "email": "john@john.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "React",
+//           "Redux",
+//           "Node.js"
+//       ],
+//       "age": 20,
+//       "isLoggedIn": true,
+//       "points": 50
+//   },
+//   "Thomas": {
+//       "email": "thomas@thomas.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "React"
+//       ],
+//       "age": 20,
+//       "isLoggedIn": false,
+//       "points": 40
+//   },
+//   "Paul": {
+//       "email": "paul@paul.com",
+//       "skills": [
+//           "HTML",
+//           "CSS",
+//           "JavaScript",
+//           "MongoDB",
+//           "Express",
+//           "React",
+//           "Node"
+//       ],
+//       "age": 20,
+//       "isLoggedIn": false,
+//       "points": 40
+//   }
+// }`
+
+// const data = JSON.parse(txt);
+// let maxSkills = 0;
+// let userWithMaxSkills = null;
+
+// for (const user in data) {
+//   if (data[user].skills.length > maxSkills) {
+//       maxSkills = data[user].skills.length;
+//       userWithMaxSkills = user;
+//   }
+// }
+
+// console.log(`User with the most skills is ${userWithMaxSkills} with ${maxSkills} skills.`);
+
+// const student = {
+//   fname: "swapnil",
+
+//   lname: "Shelke",
+
+//   age: 22,
+// };
+
+// const doSomething = callback => {
+//     setTimeout(() => {
+//       const skills = ['HTML', 'CSS', 'JS']
+//       callback('', skills)
+//     }, 2000)
+//   }
+
+//   const callback = (err, result) => {
+//     if (err) {
+//       return console.log(err)
+//     }
+//     return console.log(result)
+//   }
+
+//   doSomething(callback)
+
+// Promise
+// const doPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const skills = []
+//       if (skills.length > 0) {
+//         resolve(skills)
+//       } else {
+//         reject('Something wrong has happened')
+//       }
+//     }, 2000)
+//   })
+
+//   doPromise
+//     .then(result => {
+//       console.log(result)
+//     })
+//     .catch(error => console.log(error))
+
+// const url = 'https://restcountries.com/v2/all'
+
+// fetch(url)
+
+// .then(response => response.json())
+
+// .then(data => {
+//     console.log(data);
 // })
 
-console.log(totalPrice);
+// .catch(err => {
+//     console.log(err);
+// })
+
+// const square = async function (n) {
+//     return n * n
+//   }
+//   const value = await square(2)
+//   console.log(value)
+
+// const url = 'https://restcountries.com/v2/all'
+
+// const fetchData = async () => {
+//     try {
+//       const response = await fetch(url)
+//       const countries = await response.json()
+//       console.log(countries)
+//     } catch (err) {
+//       console.error(err)
+//     }
+//   }
+
+//   console.log('===== async and await')
+// fetchData()
+
+// const countriesAPI = "https://restcountries.com/v2/all";
+// const catsAPI = "https://api.thecatapi.com/v1/breeds";
+
+// fetch(countriesAPI)
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch((err) => console.log(err))
+
+// const fetchData = async () => {
+//   try {
+//     const response = await fetch(countriesAPI);
+//     const countries = await response.json();
+//     console.log(countries);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// fetchData()
+
+// function outerfunc(){
+//     let count = 0;
+
+//     return function plusOnse(){
+//         count++
+//         return count
+//     }
+
+// }
+
+// const innernc = outerfunc()
+
+// console.log(innernc())
+
+// const person = {
+//     firstName: 'Asabeneh',
+//     lastName: 'Yetayeh',
+//     age: 250,
+//     country: 'Finland',
+//     city: 'Helsinki',
+//     skills: ['HTML','CSS','JavaScript','React','Node','MongoDB','Python','D3.js'],
+//     isMarried: true
+//   }
+
+//   const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+
+//   for(const key in names) {
+//       console.log(key)
+//   }
+
+//   for(const key of person) {
+//       console.log(key)
+//   }
+
+// filter array: filter
+// modify aray: foreach
+// modify and make new array: map
+// we want single return value: use reduce
+// eg: sum of all elements, consecutive no, max, min average
+// number
+
+// arrays: for of, foreach
+// objects: for in
+
+// menu navigation
+
+// function navigateMenu(option) {
+//   switch (option) {
+//     case "home":
+//       console.log("navigated to home page");
+//       break;
+
+//     case "about":
+//       console.log("navigated to about page");
+//       break;
+
+//       case 'contact':
+//         console.log('navigated to contact page');
+//         break;
+
+//         case 'blog':
+//             console.log('navigated to blog page');
+//             break;
+
+//             default:
+//                 console.log('enter some input');
+//   }
+// }
+
+// console.log(navigateMenu('about'));
+
+// const headings = document.getElementsByTagName("h1")
+
+// console.log(headings);
+
+
+const headingOne = document.querySelector("h1")
+// headingOne.className = 'heading-one'
+
+
+headingOne.innerHTML = 'hello there'
+
+// headingOne.classList.add("class", 'heading-class-two')
+// headingOne.classList.add('title', 'header-title')
+
+// headingOne.setAttribute('class', 'heading-id')
+
+
+// console.log(headingOne.className);
+// console.log(headingOne.id);

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-[gray]">
+
+    <div class="container min-w-5xl h-screen flex-cols item-center justify-center">
+
+    </div>
+</body>
+<script>
+    const countriesData = [
+    { name: "China", population: 1444216107 },
+    { name: "India", population: 1393409038 },
+    { name: "United States", population: 331002651 },
+    { name: "Indonesia", population: 273523615 },
+    { name: "Pakistan", population: 220892340 },
+    { name: "Brazil", population: 212559417 },
+    { name: "Nigeria", population: 206139589 },
+    { name: "Bangladesh", population: 164689383 },
+    { name: "Russia", population: 145934462 },
+    { name: "Mexico", population: 128932753 }
+    ];
+
+    const container= document.querySelector(".container")
+    let data= ``;
+    countriesData.forEach((country) => {
+        data+= `<div class="country-item grid-template-rows: 1fr ">
+            <div class="country font-bold">${country.name}</div>
+            <div class="bar w-[400px] h-[20px] bg-[yellow]"></div>
+            <div class="population flex item-center justify-center">${country.population}</div>
+        </div>`
+    })
+    container.innerHTML= data;
+    
+
+</script>
+</html>
