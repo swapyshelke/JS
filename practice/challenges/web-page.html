@@ -123,7 +123,7 @@
   </body>
 
   <script>
-    const data = [
+   const data = [
       ["🔥", "motivational speaker"],
       ["🌱", "Educatior"],
       ["📖", "Instructor"],
@@ -140,16 +140,22 @@
       "JavaScript",
     ];
     const animationEl = document.querySelector(".aniamtion");
-    const skillsEl = document.querySelector(".tech");
+    const skillElement= document.querySelector('.skills')
 
     let index = 0;
 
     setInterval(() => {
       if (index == data.length) index = 0;
-      animationEl.innerHTML = `${element[index][0]}
-        <p>${element[index][1]}</p>`;
+      animationEl.innerHTML = `${data[index][0]}
+        <p>${data[index][1]}</p>`;
       index++;
-    }, 1000);
-    console.log(animationEl);
+    }, 1500);
+
+    let skillIndex= 0;
+    setInterval(() => {
+      if (skillIndex == skills.length) skillIndex = 0;
+      skillElement.textContent = skills[skillIndex]
+      skillIndex++;
+    }, 1500);
   </script>
 </html>
