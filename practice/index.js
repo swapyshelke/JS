@@ -2418,11 +2418,11 @@
 // console.log(headings);
 
 
-const headingOne = document.querySelector("h1")
-// headingOne.className = 'heading-one'
+// const headingOne = document.querySelector("h1")
+// // headingOne.className = 'heading-one'
 
 
-headingOne.innerHTML = 'hello there'
+// headingOne.innerHTML = 'hello there'
 
 // headingOne.classList.add("class", 'heading-class-two')
 // headingOne.classList.add('title', 'header-title')
@@ -2432,3 +2432,16 @@ headingOne.innerHTML = 'hello there'
 
 // console.log(headingOne.className);
 // console.log(headingOne.id);
+
+// const users = [
+//     { firstName: "John", lastName: "Doe" },
+//     { firstName: "Alex", lastName: "Doe" },
+//     { firstName: "Peter", lastName: "Doe" },
+//     { firstName: "Elon", lastName: "Doe" },
+//   ];
+  
+//   // Sort the users array by first name
+//   users.sort((a, b) => a.firstName.localeCompare(b.firstName));
+  
+//   // Log the sorted users array
+//   console.log(users);
