@@ -280,12 +280,28 @@
     const anywordEl = document.querySelector("#any-word");
     const searchEl = document.querySelector("#searchBox");
 
+    startingWordEl.addEventListener('click', () => {
+        ok = 1;
+        
+    })
+
+    anywordEl.addEventListener('click', () => {
+        ok = 0;
+    })
+
+
     searchEl.addEventListener("input", () => {
       const inputArr = countries.filter((country) => {
-        return country.includes(searchEl.value);
+        if(!ok) {
+            return country.toLocaleLowerCase().includes(searchEl.value.toLocaleLowerCase());
+        } else {
+            return country.toLocaleLowerCase().startsWith(searchEl.value.toLocaleLowerCase());
+        }
       });
 
+      console.log(searchEl.value);
       console.log(inputArr);
+      
       let data = ``;
       inputArr.forEach((element) => {
         data += `<div class="box">${element}</div>`;
@@ -329,6 +345,6 @@
       mainEl.innerHTML = data;
     }
 
-    // render();
+    render();
   </script>
 </html>
