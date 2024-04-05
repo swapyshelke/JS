@@ -88,11 +88,11 @@
         <h1>30 days of js Challenge Leaderboard</h1>
 
         <form action="">
-            <input type="text" placeholder="Frst Name">
-            <input type="text" placeholder="Lsst Name">
-            <input type="text" placeholder="Country">
-            <input type="text" placeholder="Player Score">
-            <input type="submit" class="submit-btn" placeholder="Add Player">
+            <input type="text" class="" name="fname" placeholder="Frst Name">
+            <input type="text" name="lname" placeholder="Lsst Name">
+            <input type="text" name="country" placeholder="Country">
+            <input type="text" name="score" placeholder="Player Score">
+            <input type="submit" name="submit" class="submit-btn" placeholder="Add Player">
         </form>
 
         <div class="error-msg">
@@ -129,4 +129,9 @@
 
     </div>
 </body>
+<script>
+    const inputEl = document.querySelectorAll('input[type="text"]');
+
+    console.log(inputEl.values);
+</script>
 </html>
