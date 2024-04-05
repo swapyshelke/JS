@@ -47,7 +47,12 @@
         margin: 1rem 0;
       }
       .aniamtion i {
-        margin: 1rem;
+        margin-left: .5rem;
+      }
+
+      .aniamtion p {
+
+        animation: moveRight infinite 1.5s ease-in-out   ;
       }
 
       .info {
@@ -83,17 +88,38 @@
         margin-top: 2.5rem;
       }
 
+      .skills{
+        margin-left: .5rem;
+      }
+
       .tech h1 {
         letter-spacing: 0px;
         margin: 0 1rem;
       }
+
+      /* Animation  */
+
+      @keyframes moveRight {
+        from {
+            transform: translateX(0);
+            opacity: .2;
+        }
+        to {
+            transform: translateX(20px); 
+            opacity: 1;
+        }
+    }
+
+
     </style>
   </head>
   <body>
     <div class="main">
       <h1>Ritesh Gadre</h1>
 
-      <div class="aniamtion"></div>
+      <div class="aniamtion">
+
+      </div>
 
       <div class="info">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
@@ -118,6 +144,9 @@
 
       <div class="tech">
         <p>The technologies I teach</p>
+        <div class="skills">
+          
+        </div>
       </div>
     </div>
   </body>
@@ -131,14 +160,14 @@
     ];
 
     const skills = [
-      "MongoDB",
-      "React",
-      "Redux",
-      "Node",
-      "Pandas",
-      "Numpy",
-      "JavaScript",
-    ];
+  ["MongoDB", "purple"],
+  ["React", "red"],
+  ["Redux", "yellow"],
+  ["Node", "green"],
+  ["Pandas", "tomato"],
+  ["Numpy", "darkgrey"]
+];
+
     const animationEl = document.querySelector(".aniamtion");
     const skillElement= document.querySelector('.skills')
 
@@ -153,9 +182,13 @@
 
     let skillIndex= 0;
     setInterval(() => {
-      if (skillIndex == skills.length) skillIndex = 0;
-      skillElement.textContent = skills[skillIndex]
+      if(skillIndex == skills.length) skillIndex = 0;
+      skillElement.innerHTML = `<span style="color: ${skills[skillIndex][1]}" class="skills">${skills[skillIndex][0]}</span>`;
       skillIndex++;
+      // console.log(skillIndex);
     }, 1500);
+
+
+    
   </script>
 </html>
