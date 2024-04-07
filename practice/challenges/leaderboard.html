@@ -112,47 +112,73 @@
         </p>
       </div>
 
-      <div class="menu"></div>
+      <div class="menu">
+        <div class="user-box"></div>
+      </div>
     </div>
   </body>
   <script>
     const form = document.querySelector("form");
 
-    const userBoxEl = document.querySelector(".user-box");
-
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
+      const userBoxEl = document.querySelector(".user-box");
+
       const fname = document.querySelector('input[name="fname"]').value;
-      console.log(fname);
+      // console.log(fname);
 
       const lname = document.querySelector('input[name="lname"]').value;
-      console.log(lname);
+      // console.log(lname);
 
       const country = document.querySelector('input[name="country"]').value;
-      console.log(country);
+      // console.log(country);
 
       const score = document.querySelector('input[name="score"]').value;
-      console.log(score);
+      // console.log(score);
 
       const submit = document.querySelector('input[name="submit"]').value;
-      console.log(submit);
+      // console.log(submit);
 
+   
+      localStorage.setItem("ls_fname", fname);
+      localStorage.setItem("ls_lname", lname); 
+      localStorage.setItem("ls_country", country);
+      localStorage.setItem("ls_score", score);
 
-    });
+      // let data = sessionStorage.getItem("fname");
+      // console.log(data);
 
-    userBoxEl.innerHTML = `<div class="user-box">
+      const ls__fname = localStorage.getItem('ls_fname')
+      const ls__lname = localStorage.getItem('ls_lname')
+      const ls__country = localStorage.getItem('ls_country')
+      const ls__score = localStorage.getItem('ls_score')
+      console.log(ls__fname, ls__lname, ls__country, ls__score);
+
+      const userData = [
+        {
+          fname: ls__fname,
+          lname: ls__lname,
+          country: ls__country,
+          score: ls__score
+        }
+      ]
+
+      console.log(userData);
+
+      const insertData = () => {
+        userBoxEl.innerHTML = `
                 <div class="user-data">
-                    <h4>${fname} ${lname}</h4>
+                    <h4>${ls__fname} ${ls__lname}</h4>
                     <p>30 JAN 2024</p>
                 </div>
 
                 <div class="country">
-                    ${country}
+                    ${ls__country}
                 </div>
 
                 <div class="score">
-                    ${score}
+                    ${ls__score}
                 </div>
 
                 <div class="options">
@@ -162,7 +188,15 @@
 
                     <div class="increment-button">+5</div>
                     <div class="decrement-button">-5</div>
-                </div>
-            </div>`;
-  </script>
+                </div>`;
+      }
+
+      insertData();
+
+
+     
+    });
+ 
+// console.log(form);
+ </script>
 </html>
