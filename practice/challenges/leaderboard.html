@@ -57,7 +57,7 @@
       }
 
       .submit-btn {
-        background-color: rgb(221, 185, 185);
+        background-color: rgb(203, 172, 172);
       }
       .red-code {
         color: red;
@@ -73,13 +73,18 @@
         align-items: center;
         padding: 0.5rem;
         text-align: center;
-        background-color: rgb(221, 185, 185);
+        /* background-color: rgb(221, 185, 185); */
       }
-
+      
       .user-data-field {
-        display: flex;
-        justify-content: space-around;
-      }
+        border:2px solid rgb(0, 0, 0); 
+        border-radius: .4rem;
+        margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
       .menu .options {
         display: flex;
@@ -93,6 +98,7 @@
         padding: 0.8rem;
         background-color: white;
       }
+
     </style>
   </head>
   <body>
@@ -103,7 +109,7 @@
         <input type="text" class="" name="fname" placeholder="Frst Name" />
         <input type="text" name="lname" placeholder="Lsst Name" />
         <input type="text" name="country" placeholder="Country" />
-        <input type="text" name="score" placeholder="Player Score" />
+        <input type="number" name="score" placeholder="Player Score" />
         <input
           type="submit"
           name="submit"
@@ -124,68 +130,50 @@
     </div>
   </body>
   <script>
+    
     const form = document.querySelector("form");
+    const userBoxEl = document.querySelector(".user-box");
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const userBoxEl = document.querySelector(".user-box");
-
       const fname = document.querySelector('input[name="fname"]').value;
-      console.log(fname);
-
       const lname = document.querySelector('input[name="lname"]').value;
-      console.log(lname);
-
       const country = document.querySelector('input[name="country"]').value;
-      console.log(country);
-
       const score = document.querySelector('input[name="score"]').value;
-      console.log(score);
 
-      const submit = document.querySelector('input[name="submit"]').value;
-      // console.log(submit);
-
-   
-      localStorage.setItem("ls_fname", fname);
-      localStorage.setItem("ls_lname", lname); 
-      localStorage.setItem("ls_country", country);
-      localStorage.setItem("ls_score", score);
-
-      // let data = sessionStorage.getItem("fname");
-      // console.log(data);
-
-      const ls__fname = localStorage.getItem('ls_fname')
-      const ls__lname = localStorage.getItem('ls_lname')
-      const ls__country = localStorage.getItem('ls_country')
-      const ls__score = localStorage.getItem('ls_score')
-      console.log(ls__fname, ls__lname, ls__country, ls__score);
-
-      const userData = [
-        {
-          fname: ls__fname,
-          lname: ls__lname,
-          country: ls__country,
-          score: ls__score
+      const userData = {
+          userFisrtName: fname,
+          userLastName: lname,
+          userCountry: country,
+          userScore: score
         }
-      ]
 
       console.log(userData);
 
       const insertData = () => {
+
+        if(!fname && !lname && !country && !score) {
+          return;
+        }
+
+        // if(typeof score != Number) {
+        //   return;
+        // }
+
         userBoxEl.innerHTML += `
         <div class="user-data-field" >
           <div class="user-data">
-                    <h4>${ls__fname} ${ls__lname}</h4>
+                    <h4>${userData.userFisrtName} ${userData.userLastName}</h4>
                     <p>30 JAN 2024</p>
                 </div>
 
                 <div class="country">
-                    ${ls__country}
+                    ${userData.userCountry}
                 </div>
 
                 <div class="score">
-                    ${ls__score}
+                    ${userData.userScore}
                 </div>
 
                 <div class="options">
@@ -199,10 +187,7 @@
           </div>       
         `;
 
-        fname = ''
-        lname = ''
-        country = ''
-        score = ''
+        form.reset();
       }
 
 
@@ -214,5 +199,6 @@
     });
  
 // console.log(form);
+ </script>
  </script>
 </html>
