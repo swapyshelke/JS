@@ -69,10 +69,16 @@
       .user-box {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         align-items: center;
         padding: 0.5rem;
         text-align: center;
         background-color: rgb(221, 185, 185);
+      }
+
+      .user-data-field {
+        display: flex;
+        justify-content: space-around;
       }
 
       .menu .options {
@@ -126,16 +132,16 @@
       const userBoxEl = document.querySelector(".user-box");
 
       const fname = document.querySelector('input[name="fname"]').value;
-      // console.log(fname);
+      console.log(fname);
 
       const lname = document.querySelector('input[name="lname"]').value;
-      // console.log(lname);
+      console.log(lname);
 
       const country = document.querySelector('input[name="country"]').value;
-      // console.log(country);
+      console.log(country);
 
       const score = document.querySelector('input[name="score"]').value;
-      // console.log(score);
+      console.log(score);
 
       const submit = document.querySelector('input[name="submit"]').value;
       // console.log(submit);
@@ -167,8 +173,9 @@
       console.log(userData);
 
       const insertData = () => {
-        userBoxEl.innerHTML = `
-                <div class="user-data">
+        userBoxEl.innerHTML += `
+        <div class="user-data-field" >
+          <div class="user-data">
                     <h4>${ls__fname} ${ls__lname}</h4>
                     <p>30 JAN 2024</p>
                 </div>
@@ -188,8 +195,17 @@
 
                     <div class="increment-button">+5</div>
                     <div class="decrement-button">-5</div>
-                </div>`;
+                </div>
+          </div>       
+        `;
+
+        fname = ''
+        lname = ''
+        country = ''
+        score = ''
       }
+
+
 
       insertData();
 
