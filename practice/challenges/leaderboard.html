@@ -134,35 +134,47 @@
     const form = document.querySelector("form");
     const userBoxEl = document.querySelector(".user-box");
 
+    const userarr = []
+
     form.addEventListener("submit", (e) => {
+
       e.preventDefault();
+
 
       const fname = document.querySelector('input[name="fname"]').value;
       const lname = document.querySelector('input[name="lname"]').value;
       const country = document.querySelector('input[name="country"]').value;
       const score = document.querySelector('input[name="score"]').value;
+      let index = 1;
+
+      
+
 
       const userData = {
           userFisrtName: fname,
           userLastName: lname,
           userCountry: country,
-          userScore: score
-        }
+          userScore: score,
+          userId : index
+        };
 
-      console.log(userData);
+        userarr.push(userData);
+
+        index++;
+
+      console.log(userarr);
 
       const insertData = () => {
 
-        if(!fname && !lname && !country && !score) {
-          return;
-        }
-
-        // if(typeof score != Number) {
+        // if(!fname && !lname && !country && !score) {
         //   return;
         // }
 
+       
+
+        
         userBoxEl.innerHTML += `
-        <div class="user-data-field" >
+        <div class="user-data-field" id=${userData.userId}; >
           <div class="user-data">
                     <h4>${userData.userFisrtName} ${userData.userLastName}</h4>
                     <p>30 JAN 2024</p>
@@ -177,7 +189,7 @@
                 </div>
 
                 <div class="options">
-                    <div class="delete-button">
+                    <div id="delete" onclick="deleteItem(e)" class="delete-button">
                        <i class="fa-solid fa-trash"></i>
                     </div>
 
@@ -188,15 +200,21 @@
         `;
 
         form.reset();
-      }
-
-
+        }
 
       insertData();
-
-
-     
     });
+
+    function deleteItem(e){
+        // const deleteBtn = document.getElementById('delete')
+        const userDataEl = event.target.closest(".user-data-field");
+        if(userDataEl) {
+          userDataEl.remove();    
+        }
+
+        console.log(e);
+        console.log('delete btn clicked');
+      }
  
 // console.log(form);
  </script>

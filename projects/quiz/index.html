@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
     <div class="quize-container">
 
-        <h1>Question Text</h1>
+        <h1 id="question">Question Text</h1>
 
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <input type="radio" name="answer" id="a">
+                <label id="a_text" for="a">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="b">
+                <label id="b_text" for="b">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="c">
+                <label id="c_text" for="c">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="d">
+                <label for="d" id="d_text">Question</label>
+            </li>
         </ul>
-        <button>Submit</button>
+        <button  id="submit">Submit</button>
     </div>
     
 </body>
 <script src="script.js"></script>
 </html>
+
+<!-- https://www.youtube.com/watch?v=dtKciwk_si4&t=2552s -->
