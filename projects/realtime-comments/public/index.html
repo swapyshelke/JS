@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realtime comment system</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4><strong>Realtime comment system using nodeJs, Express, Mongo DB, Socket.io and vanilla JavaScript</strong></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at minus commodi numquam non vero, repudiandae assumenda obcaecati iusto deleniti.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">
+                    Comments
+                </h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a comment</label>
+                    <textarea id="textarea" class="form-control border-2" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-primary float-right mt-3">Post a comment</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="comment__box">
+                    <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>John Doe</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis magnam provident qui unde eveniet illo laboriosam maiores. Ratione, itaque.</p>
+
+                                <div>
+                                    <!-- <img src="images/clock.png" alt="clock"> -->
+                                    <small>11:30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
