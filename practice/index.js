@@ -2445,3 +2445,163 @@
   
 //   // Log the sorted users array
 //   console.log(users);
+
+
+// let arr = [
+//     {
+//         name:" swapnil",
+//         gender: "male"
+//     },
+
+//     {
+//         name: "Swapanali",
+//         gender: "female"
+//     },
+//     {
+//         name:"Vikas",
+//         gender: "male"
+//     }
+// ]
+
+// let res = arr.filter(obj => {
+//     return obj.gender === "male"
+// })
+
+// console.log(res);
+
+
+// const arr = ['a', "A", 'b', 'C', "D"]
+
+// const res = arr.filter(ele => {
+//     return ele === ele.toLocaleUpperCase();
+// })
+
+// console.log(res);
+
+// const res = arr.map(ele => {
+//     return ele.toLocaleUpperCase()
+// })
+
+// console.log( res[0]);
+
+// let obj = {
+    
+// }
+
+// let lenObj = Object.keys(obj).length
+// lenObj < 1 ? console.log("obj is empty") : console.log("obj is not empty");
+
+
+// let arr = [2, 3, 5, 6, 10]
+
+// let res = arr.map(ele => {
+//     return ele * 2
+// })
+
+// console.log(res);
+
+// let res = arr.join()
+// console.log(res);
+
+
+// let arr = [1, 2, 3, 4, 5, ['a', 'b', 'c'], ['44', '55', [100, 200, 300]]];
+
+
+// console.log(arr.flat(1));
+
+// let arr = [1, 2, 3,4]
+
+// let res = arr.every(ele => typeof ele === 'number')
+
+// console.log(res);
+
+
+// 0, 1 - not prime
+// 2, 3, 5, 7, 11, 13, 17, 23 - prime numbers
+
+
+// 
+
+// let res = arr.map(ele => {
+//         for(let i = 0 ; i < arr.length; i++) {
+//             if(ele / )
+//         }
+// })
+
+// console.log(res);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+/*
+function isPrime(num){
+    if(num == '0' || num === '1'){
+        return false
+    }
+
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+        if(num % i === 0) return false;
+    }
+
+    return true;
+}
+
+
+console.log(isPrime(7));
+
+*/
+
+
+// func that removes duplicate values from array
+
+// function dup(arr) {
+//     let newSet = new Set(arr)
+//     return [...newSet]
+    
+// }
+
+// console.log(dup([1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 6, 6, 1]))
+
+
+// let arr = [1, 2, 3, 4, 1, 1]
+// console.log(arr.lastIndexOf(1));
+
+// let name = "SwapnilSwapnil"
+
+// function getOccurence(str) {
+
+//     let obj = {}
+
+//     str.split("").forEach((letter) => {
+//         if(obj.hasOwnProperty(letter)) {
+//             obj[letter]++
+//         } else {
+//             obj[letter] = 1
+//         }
+//     } )
+
+    // console.log(obj);
+
+    // for(let val in obj) {
+    //     console.log(val);
+    // }
+// let arr = Object.entries(obj)
+// console.log(arr);
+
+// arr.forEach(arr => {
+//     console.log(arr);
+    
+    // console.log(`${arr[0]} ${arr[1]}`);
+    
+// })
+
+// arr.map((val) => {
+//     console.log();
+// })
+
+// }
+
+// getOccurence(name)
+
+
+// most frequent element in array
