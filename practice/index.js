@@ -2605,3 +2605,105 @@ console.log(isPrime(7));
 
 
 // most frequent element in array
+
+// let arr = [1, 2, 3, 4, 5, 6, 4, 3, 2, 4, 2, 1, 1]
+
+// function getOccurence(arr) {
+//     let freqObj = {}
+
+//     arr.forEach(letter => {
+//         if(freqObj.hasOwnProperty(letter)) {
+//             freqObj[letter]++
+//         } else {
+//             freqObj[letter] = 1
+//         }
+//     });
+    
+//     // console.log();
+//     let maxFreq = Math.max(...Object.values(freqObj))
+
+//     let keyValueArr = Object.entries(freqObj)
+
+//     let filteredArr = keyValueArr.filter(entryarr => {
+// return entryarr[1] === maxFreq        
+//     })
+
+//     console.log(filteredArr);
+    
+
+//     // console.log(filteredArr);/
+    
+    
+//     // for(let key in freqObj) {
+//     //     // console.log(key);
+        
+//     // }
+// }
+
+// getOccurence(arr)
+
+
+// let arr = [100, 2, 3, 4, 5, 6]
+
+// for(let idx in arr) {
+//     console.log(idx);
+    
+// }
+
+
+
+// 31. how can u update the DOM based on user input in real time, e.g live preview of a form
+
+// 32. how would you handle form validation in real-time and show error messages dynamically
+
+// 33. how do you find the closest ancestor element that matches a selector
+
+// 34. how would u toggle a class on an element when another element is clicked (e.g: show/hide sidebar)
+
+// 35. create show/hide password
+
+// 36. 
+
+
+// console.log('17-10-2025' , "Start");
+
+// let date = new Date(); 
+// console.log(date); // 2025-10-17T05:07:22.700Z
+
+
+
+// function T(){
+//     const myArgs = Array.from(arguments)[0]
+//     console.log(myArgs);    
+// }
+
+// T(1, 2, 3, 4, 5, 6, 7)
+
+
+// function mync() {
+//     console.log('this is arrow func');
+//     console.log(arguments);    
+// }
+
+// mync(1, 2, 3,4)
+
+// Execution context
+// - execution : run hotay
+// - context : sandarbh
+
+// he don lakshat teva
+// 1. Global Executionn Context
+// 2. nctoin Execution Context
+
+// fetch('https://dummyjson.com/ip')
+// .then(res => res.json())
+// .then(res => console.log(res))
+
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+// .then(res => res.json())
+// .then(json => console.log(json))
+
+// fetch("https://jsonplaceholder.typicode.com/photos")
+// .then(data => data.json())
+// .then(res => console.log(res[0].title))
+
