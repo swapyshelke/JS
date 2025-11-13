@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account</title>
 </head>
 <body>
-   <form action="" id="accountrm">
-    <input type="text" id="cname" placeholder="Enter name">
-    <input type="text" id="balance" placeholder="initial balance">
+  <form id="accountForm">
+    <input type="text" id="customerName" placeholder="Enter name">
+    <input type="number" id="balance" placeholder="Initial balance">
     <button id="btn">Create Account</button>
-   </form>
+  </form>
 
-   <hr>
+  <form id="depositForm">
+    <input type="number" placeholder="Account Number" id="accountNumber">
+    <input type="number" placeholder="Deposit money" id="amount">
+    <button>Submit</button>
+  </form>
 
-   <form action="" id="depositrm">
-    <input type="number" id="accountNumber" placeholder="Account Number">
-    <input type="text" id="amount" placeholder="Amount">
-    <button id="btn">Deposite</button>
-   </form>
-
-
+  <!-- ✅ keep your script LAST -->
+  <script src="./JS-constructor-functions/constructor-function5.js"></script>
 </body>
-<script src="lec-1.js"></script>
 </html>

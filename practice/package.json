@@ -5,7 +5,7 @@
   "main": "callbacks.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon operators.js",
+    "start": "nodemon Date.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
