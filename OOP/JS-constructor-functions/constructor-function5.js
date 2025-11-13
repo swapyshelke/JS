@@ -46,6 +46,7 @@ depositForm.addEventListener('submit', (e) => {
         const account = accounts.find((acc) => acc.accountNumber === +accountNumber.value);
         if(!account) {
             console.log('acc not found');
+            return 
         }
 
         account.deposit(+amount.value)
