@@ -1,0 +1,1 @@
+- I want to publish what things i'm writing to website or on linkedin in edited format - 

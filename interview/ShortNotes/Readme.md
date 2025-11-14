@@ -1,0 +1,2 @@
+- Shallow copy : shared by reference (pointing to same memory location)
+- Deep Copy - Photocopy Everything (independent of original)
