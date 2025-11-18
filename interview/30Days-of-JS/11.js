@@ -12,7 +12,7 @@ function memoize(func){
     }else {
       // 
       let result = func.apply(this, args)
-      let result = func(n)
+       result = func(n)
       cache[n] = result;
       return result;
     }

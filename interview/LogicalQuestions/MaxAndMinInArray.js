@@ -1,4 +1,5 @@
 const arrNumber = [1, 9, 87, 65, 5]
+
 const maXfunction = (arr) => {
     return arr.reduce(function (pre, cur) {
         return pre > cur ? pre : cur

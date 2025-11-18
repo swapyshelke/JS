@@ -9,7 +9,7 @@
 
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon interview/JavaScript-part5.js"
+    "start": "nodemon practise/All Methods/String"
   },
   "author": "",
   "license": "ISC",
