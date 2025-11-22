@@ -1,8 +1,10 @@
 //Merger function, which merges 2 sorted array into 1 sorted array
+
 function merger(arr1, arr2) {
   let i = 0,
     j = 0,
     mergedArr = [];
+
   while (i < arr1.length && j < arr2.length) {
     if (arr1[i] > arr2[j]) mergedArr.push(arr2[j++]);
     else mergedArr.push(arr1[i++]);
